@@ -32,7 +32,7 @@ class OnBoardingAdapter(private val list: ArrayList<OnBoardingModel>, val listen
             binding.ivViewPager.setImageResource(model.image)
             binding.btnNext.text = model.txtBtn
 
-            if (binding.btnNext.text.equals("Начинаем")) {
+            if (binding.btnNext.text.equals("start")) {
                 binding.btnNext.setOnClickListener {
                     listener.onClick()
                 }
